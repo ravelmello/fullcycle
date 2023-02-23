@@ -1,13 +1,13 @@
 version: '3'
 
 services:
-  #goapp:
-  #  build: .
-  #  volumes:
-  #    - .:/go/app
-  #  platform: linux/amd64
-  #  extra_hosts:
-  #    - "host.docker.internal:172.17.0.1"
+  goapp:
+    build: .
+    volumes:
+      - .:/go/app
+   # platform: linux/amd64
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
 
   zookeeper:
     image: confluentinc/cp-zookeeper:7.3.0
